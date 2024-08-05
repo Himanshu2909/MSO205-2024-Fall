@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}	% Para caracteres en español
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{multirow,booktabs}
+\usepackage[table]{xcolor}
+\usepackage{fullpage}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath}
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\usepackage{empheq}
+\usepackage{framed}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{reg}{Rule}
+\newtheorem{exer}{Exercise}
+\newtheorem{note}{Note}
+\usepackage{mathrsfs}
+
+\begin{document}
+
+%Change this for headings
+\setcounter{section}{0}
+\title{Lecture 1 Class Notes}
+
+\thispagestyle{empty}
+
+\begin{center}
+{\LARGE \bf Class Notes| Lecture 1}\\
+{\large MSO: Introduction to Probability Theory}\\
+Fall 2024
+\end{center}
+%Heading Ends
+
+
+\tableofcontents
+
+
+%Content Starts
+\section{Definitions}
+\begin{note}
+\textbf{Definition 1} (Random Experiment): An experiment in which:
+\begin{itemize}
+\item all possible outcomes of the experiment are known in advance
+\item outcome of a particular trial/performance of the experiment cannot be specified in advanced
+\item the experiment can be repreated under identical conditions
+\end{itemize}
+Denoted via $\varepsilon$
+\end{note}
+
+\begin{note}
+{\textbf{Definition 2}} (Sample Space): THe collection of all possible outcomes of the random experiment $\varepsilon$ is called its sample space. Example:
+$$
+\omega = {(x,y,z): x,y,z \in {H, T}}
+$$
+
+\end{note}
+
+
+\begin{note}
+{\textbf{Definition 3}} (Events): If the outcome of a random experiment $\varepsilon$ is an element of a subset $\mathscr{E}$ of $\omega$, then we say that the event $\mathscr{E}$ has occured. An event is an set object. 
+
+Collection of all events is denoted as $\mathscr{F}$. This means $\mathscr{F}$ is a set of sets. Empty Set $\emptyset$ and the sample space $\Omega$ will always be an element in $F$.
+\end{note}
+
+\begin{note}
+{\textbf{Definition 4}} (Probability, Classical (A priori) Definition): Suppose that a random experiment results in $n$ (a finite number) outcomes. Given an event $mathscr{A} \in \mathscr{F}$, if it apears in m ($0 \leq m \leq n$) outcomes, then the probability of $\mathscr{A}$ is $\frac{m}{n}$. \
+\end{note}
+
+The classical definition only works when there are finitely many outcomes. Due to the limitations of this definition, we look for other ways to understand the notion of probability.
+
+\begin{note}
+{\textbf{Definition 5}} (Probability, Relative Frequency(A posteriori) Definition): If a random experiment $\mathscr{E}$ is repeared a large number, say $n$, of times and an event $\mathscr{A}$ occurs $m$ many times, then the relative frequency $\frac{m}{n}$ may be taken as an approximate value of a probability of $\mathscr{A}$.
+\end{note}
+
+
+\end{document}
